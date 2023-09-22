@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import time
-
-=======
->>>>>>> 767ef5d573308be983d78e99064c541956478256
 from playwright.sync_api import Playwright, sync_playwright, expect
 
 
@@ -25,10 +21,6 @@ def test_add_todo(playwright: Playwright) -> None:
     shop_card = page.locator(".shopping_cart_badge")
     badge_text = shop_card.text_content()
 
-<<<<<<< HEAD
-=======
-    # Проверить, что текст равен "1"
->>>>>>> 767ef5d573308be983d78e99064c541956478256
     if badge_text == "1":
         print("1 item")
     else:
@@ -36,11 +28,8 @@ def test_add_todo(playwright: Playwright) -> None:
 
     page.select_option("[class='product_sort_container']", "Price (low to high)")
 
-<<<<<<< HEAD
     browser.close()
-=======
-    page.wait_for_timeout(2000)
->>>>>>> 767ef5d573308be983d78e99064c541956478256
+
 
 
 
